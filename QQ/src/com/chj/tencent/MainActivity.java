@@ -14,7 +14,8 @@ public class MainActivity extends Activity implements OnItemClickListener {
 
 	private static String[] objects = new String[]{"侧滑面板", "快速索引", "侧拉删除",
 			"时差特性", "粘性控件"};
-	private static Class<?>[] clazzs = new Class[]{DragActivity.class};
+	private static Class<?>[] clazzs = new Class[]{DragActivity.class,
+			IndexActivity.class};
 	private ListView list;
 	private ArrayAdapter<String> adapter;
 
@@ -34,7 +35,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 
 		list = (ListView) findViewById(R.id.list);
 		adapter = new ArrayAdapter<String>(getApplicationContext(),
-				R.layout.items, objects);
+				R.layout.main_items, objects);
 
 		list.setVerticalScrollBarEnabled(false);// 隐藏滚动条
 		list.setDividerHeight(0);// 去掉分割线

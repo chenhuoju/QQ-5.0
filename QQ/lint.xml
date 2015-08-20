@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
+    <issue id="DrawAllocation" severity="ignore" />
     <issue id="NewApi" severity="ignore">
         <ignore path="src/com/chj/tencent/MainActivity.java" />
         <ignore path="src/com/chj/tencent/drag/DragLayout.java" />

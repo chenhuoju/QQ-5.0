@@ -22,7 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.chj.tencent.DragActivity"/>
+        <activity android:name="com.chj.tencent.DragActivity" />
+        <activity android:name="com.chj.tencent.IndexActivity" />
     </application>
 
 </manifest>

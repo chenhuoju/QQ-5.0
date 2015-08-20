@@ -25,7 +25,7 @@ import com.chj.tencent.util.Cheeses;
  * @作者:陈火炬
  * @时间:2015-8-20 上午10:52:27
  * 
- * @描述:快速索引Activity
+ * @描述:快速索引
  * 
  * @SVN版本号:$Rev$
  * @更新人:$Author$

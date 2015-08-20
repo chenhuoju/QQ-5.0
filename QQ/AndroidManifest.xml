@@ -24,6 +24,7 @@
         </activity>
         <activity android:name="com.chj.tencent.DragActivity" />
         <activity android:name="com.chj.tencent.IndexActivity" />
+        <activity android:name="com.chj.tencent.ParallaxActivity" />
     </application>
 
 </manifest>

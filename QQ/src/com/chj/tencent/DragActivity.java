@@ -28,7 +28,7 @@ import android.widget.TextView;
  * @作者:陈火炬
  * @时间:2015-8-20 上午10:19:12
  * 
- * @描述:侧滑面板Activity
+ * @描述:侧滑面板
  * 
  * @SVN版本号:$Rev$
  * @更新人:$Author$

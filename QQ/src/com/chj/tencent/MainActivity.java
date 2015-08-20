@@ -12,10 +12,10 @@ import android.widget.ListView;
 
 public class MainActivity extends Activity implements OnItemClickListener {
 
-	private static String[] objects = new String[]{"侧滑面板", "快速索引", "侧拉删除",
-			"时差特性", "粘性控件"};
+	private static String[] objects = new String[]{"侧滑面板", "快速索引", "视差特性",
+			"侧拉删除", "粘性控件"};
 	private static Class<?>[] clazzs = new Class[]{DragActivity.class,
-			IndexActivity.class};
+			IndexActivity.class, ParallaxActivity.class};
 	private ListView list;
 	private ArrayAdapter<String> adapter;
 

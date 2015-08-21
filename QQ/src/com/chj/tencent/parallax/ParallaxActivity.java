@@ -25,9 +25,9 @@ import com.chj.tencent.util.Cheeses;
  * 
  */
 public class ParallaxActivity extends Activity {
-	private ParallaxListView mListView;// listVew
-	private View mHeaderView;// 头布局
-	private ImageView mImage;// 头布局中的imageView
+	private ParallaxListView mListView; // listVew
+	private View mHeaderView; // 头布局
+	private ImageView mImage; // 头布局中的imageView
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +66,7 @@ public class ParallaxActivity extends Activity {
 				new OnGlobalLayoutListener() {
 
 					/**
-					 * 当布局填充结束之后, 此方法会被调用
+					 * 当布局填充结束之后 , 此方法会被调用
 					 */
 					@Override
 					public void onGlobalLayout() {

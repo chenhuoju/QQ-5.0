@@ -20,13 +20,15 @@ import com.chj.tencent.R;
  * @更新描述:TODO
  * 
  */
-public class SlidingDeleteActivity extends Activity {
+public class SlidingDeleteActivity extends Activity
+{
 
-	protected static final String TAG = "SlidingDeleteActivity";
-	private ListView mListView;
+	protected static final String	TAG	= "SlidingDeleteActivity";
+	private ListView				mListView;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState)
+	{
 		super.onCreate(savedInstanceState);
 
 		initView();
@@ -37,7 +39,8 @@ public class SlidingDeleteActivity extends Activity {
 	/**
 	 * 加载数据
 	 */
-	private void initData() {
+	private void initData()
+	{
 		// 往listView添加数据，list-->adapter
 		mListView.setAdapter(new SlidingAdapter(SlidingDeleteActivity.this));
 	}
@@ -45,7 +48,8 @@ public class SlidingDeleteActivity extends Activity {
 	/**
 	 * 初始化视图
 	 */
-	private void initView() {
+	private void initView()
+	{
 		requestWindowFeature(Window.FEATURE_NO_TITLE);// 去除标题
 		setContentView(R.layout.activity_sliding);
 

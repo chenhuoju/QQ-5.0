@@ -12,7 +12,7 @@ import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombi
  * @作者:陈火炬
  * @时间:2015-8-20 下午3:30:40
  * 
- * @描述:汉子转换成拼音的Util
+ * @描述:拼音工具
  * 
  * @SVN版本号:$Rev$
  * @更新人:$Author$

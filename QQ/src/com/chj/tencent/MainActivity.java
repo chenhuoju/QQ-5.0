@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.chj.tencent.drag.DragActivity;
+import com.chj.tencent.goo.GooActivity;
 import com.chj.tencent.index.IndexActivity;
 import com.chj.tencent.parallax.ParallaxActivity;
 import com.chj.tencent.sliding.SlidingDeleteActivity;
@@ -22,7 +23,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 
 	private static Class<?>[] clazzs = new Class[]{DragActivity.class,
 			IndexActivity.class, ParallaxActivity.class,
-			SlidingDeleteActivity.class};
+			SlidingDeleteActivity.class, GooActivity.class};
 
 	private ListView list;
 	private ArrayAdapter<String> adapter;

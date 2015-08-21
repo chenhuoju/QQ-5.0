@@ -15,7 +15,7 @@ import android.widget.Toast;
  * @作者:陈火炬
  * @时间:2015-8-19 下午9:18:26
  * 
- * @描述:Utils工具类
+ * @描述:吐司工具
  * 
  * @SVN版本号:$Rev$
  * @更新人:$Author$

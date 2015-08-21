@@ -26,6 +26,7 @@
         <activity android:name="com.chj.tencent.index.IndexActivity" />
         <activity android:name="com.chj.tencent.parallax.ParallaxActivity" />
         <activity android:name="com.chj.tencent.sliding.SlidingDeleteActivity" />
+        <activity android:name="com.chj.tencent.goo.GooActivity" />
     </application>
 
 </manifest>

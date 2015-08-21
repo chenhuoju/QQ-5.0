@@ -31,16 +31,17 @@ import com.chj.tencent.sliding.SlidingLayout.onSlidingLayoutListener;
  * @更新描述:TODO
  * 
  */
-public class SlidingAdapter extends BaseAdapter {
+public class SlidingAdapter extends BaseAdapter
+{
 
-	protected static final String TAG = "SlidingAdapter";
-	private Context mContext;
-	private ArrayList<SlidingLayout> openItems;// 打开的条目集合
+	protected static final String		TAG		= "SlidingAdapter";
+	private Context						mContext;
+	private ArrayList<SlidingLayout>	openItems;													// 打开的条目集合
 
 	// 图标资源
-	public static final int[] RESIDS = new int[]{R.drawable.mm1,
-			R.drawable.mm2, R.drawable.mm3, R.drawable.mm4, R.drawable.mm5,
-			R.drawable.mm6};
+	public static final int[]			RESIDS	= new int[] {
+												R.drawable.mm1, R.drawable.mm2, R.drawable.mm3,
+												R.drawable.mm4, R.drawable.mm5, R.drawable.mm6 };
 
 	public SlidingAdapter(Context context) {
 		this.mContext = context;
@@ -49,41 +50,44 @@ public class SlidingAdapter extends BaseAdapter {
 	}
 
 	@Override
-	public int getCount() {
-		if (NAMES != null) {
-			return NAMES.length;
-		}
+	public int getCount()
+	{
+		if (NAMES != null) { return NAMES.length; }
 		return 0;
 	}
 
 	@Override
-	public Object getItem(int position) {
-		if (NAMES != null) {
-			return NAMES[position];
-		}
+	public Object getItem(int position)
+	{
+		if (NAMES != null) { return NAMES[position]; }
 		return null;
 	}
 
 	@Override
-	public long getItemId(int position) {
+	public long getItemId(int position)
+	{
 		return position;
 	}
 
 	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
+	public View getView(int position, View convertView, ViewGroup parent)
+	{
 		ViewHolder holder;
 
-		if (convertView == null) {
+		if (convertView == null)
+		{
 			convertView = View.inflate(mContext, R.layout.sliding_items, null);
 
 			holder = new ViewHolder();
 			holder.tv_call = (TextView) convertView.findViewById(R.id.tv_call);
 			holder.tv_del = (TextView) convertView.findViewById(R.id.tv_del);
 			holder.iv_image = (ImageView) convertView
-					.findViewById(R.id.iv_image);
+														.findViewById(R.id.iv_image);
 			holder.tv_name = (TextView) convertView.findViewById(R.id.tv_name);
 			convertView.setTag(holder);
-		} else {
+		}
+		else
+		{
 			holder = (ViewHolder) convertView.getTag();
 		}
 
@@ -97,11 +101,13 @@ public class SlidingAdapter extends BaseAdapter {
 		sl.setSlidingListener(new onSlidingLayoutListener() {
 
 			@Override
-			public void onStartOpen(SlidingLayout slidingLayout) {
+			public void onStartOpen(SlidingLayout slidingLayout)
+			{
 				Log.d(TAG, "onStartOpen");
 
 				// 要去开启时,先遍历所有已打开条目,逐个关闭
-				for (SlidingLayout item : openItems) {
+				for (SlidingLayout item : openItems)
+				{
 					item.close();
 				}
 				// 清空集合
@@ -109,12 +115,14 @@ public class SlidingAdapter extends BaseAdapter {
 			}
 
 			@Override
-			public void onStartClose(SlidingLayout slidingLayout) {
+			public void onStartClose(SlidingLayout slidingLayout)
+			{
 				Log.d(TAG, "onStartClose");
 			}
 
 			@Override
-			public void onOpen(SlidingLayout slidingLayout) {
+			public void onOpen(SlidingLayout slidingLayout)
+			{
 				Log.d(TAG, "onOpen");
 
 				// 将条目添加进集合
@@ -122,12 +130,14 @@ public class SlidingAdapter extends BaseAdapter {
 			}
 
 			@Override
-			public void onDraging(SlidingLayout slidingLayout) {
+			public void onDraging(SlidingLayout slidingLayout)
+			{
 
 			}
 
 			@Override
-			public void onClose(SlidingLayout slidingLayout) {
+			public void onClose(SlidingLayout slidingLayout)
+			{
 				Log.d(TAG, "onClose");
 
 				// 将条目集合中从移除
@@ -137,10 +147,12 @@ public class SlidingAdapter extends BaseAdapter {
 
 		return convertView;
 	}
-	static class ViewHolder {
-		TextView tv_call;
-		TextView tv_del;
-		ImageView iv_image;
-		TextView tv_name;
+
+	static class ViewHolder
+	{
+		TextView	tv_call;
+		TextView	tv_del;
+		ImageView	iv_image;
+		TextView	tv_name;
 	}
 }

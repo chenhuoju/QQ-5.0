@@ -2,17 +2,17 @@ package com.chj.tencent.util;
 
 /**
  * 
- * @包名:com.chj.tencent.util 
+ * @包名:com.chj.tencent.util
  * @类名:Cheeses
  * @作者:陈火炬
  * @时间:2015-8-20 上午8:33:53
  * 
- * @描述:Cheeses工具类
- *
+ * @描述:奶酪工具
+ * 
  * @SVN版本号:$Rev$
  * @更新人:$Author$
  * @更新描述:TODO
- *
+ * 
  */
 public class Cheeses {
 

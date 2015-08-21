@@ -13,14 +13,20 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
- * 快速索引
  * 
- * 用于根据字母快速定位联系人
+ * @包名:com.chj.tencent.index
+ * @类名:QuickIndexBar
+ * @作者:陈火炬
+ * @时间:2015-8-21 下午3:48:07
  * 
- * @author poplar
+ * @描述:快速索引,用于根据字母快速定位联系人
+ * 
+ * @SVN版本号:$Rev$
+ * @更新人:$Author$
+ * @更新描述:TODO
+ * 
  */
 public class QuickIndexBar extends View {
-
 	private static final String TAG = "QuickIndexBar";
 
 	private static final String[] LETTERS = new String[]{"A", "B", "C", "D",

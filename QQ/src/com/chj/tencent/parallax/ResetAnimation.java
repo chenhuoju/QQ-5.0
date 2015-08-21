@@ -30,7 +30,7 @@ public class ResetAnimation extends Animation {
 		this.endHeight = endHeight;
 
 		// 设置动画的加速度
-		setInterpolator(new OvershootInterpolator());
+		setInterpolator(new OvershootInterpolator(2));
 		// 设置动画执行时长
 		setDuration(500);
 	}
